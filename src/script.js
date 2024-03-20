@@ -626,9 +626,9 @@
                     h('span', '', {}, [
                         joinWithArrow([
                             'What month was it last month?',
-                            months[(date.getMonth() - 1) % 12].english,
-                            months[(date.getMonth() - 1) % 12].kanji,
-                            months[(date.getMonth() - 1) % 12].hiragana
+                            months[Math.max(date.getMonth() - 1, 0)].english,
+                            months[Math.max(date.getMonth() - 1, 0)].kanji,
+                            months[Math.max(date.getMonth() - 1, 0)].hiragana
                         ])
                     ])
                 ];
@@ -643,9 +643,9 @@
                     h('span', '', {}, [
                         joinWithArrow([
                             'What month is it this month?',
-                            months[date.getMonth() % 12].english,
-                            months[date.getMonth() % 12].kanji,
-                            months[date.getMonth() % 12].hiragana
+                            months[date.getMonth()].english,
+                            months[date.getMonth()].kanji,
+                            months[date.getMonth()].hiragana
                         ])
                     ])
                 ];
@@ -660,9 +660,9 @@
                     h('span', '', {}, [
                         joinWithArrow([
                             'What month is it next month?',
-                            months[(date.getMonth() + 1) % 12].english,
-                            months[(date.getMonth() + 1) % 12].kanji,
-                            months[(date.getMonth() + 1) % 12].hiragana
+                            months[Math.min(date.getMonth() + 1, 12)].english,
+                            months[Math.min(date.getMonth() + 1, 12)].kanji,
+                            months[Math.min(date.getMonth() + 1, 12)].hiragana
                         ])
                     ])
                 ];
