@@ -6,11 +6,11 @@ Leading up to a Japanese test, I created a "quiz generator" that would randomly 
 
 This is fully written in PURE JavaScript, HTML, and CSS. No libraries or frameworks were used. The only thing that was used was the Google Fonts API to import the font used in the project.
 
-_※ Please don't ask why, I thought it would be "easier" to do it this way. I was wrong._
+※ _Please don't ask why, I thought it would be "easier" to do it this way. I was wrong._
 
 == How to Use
 
-Live version of the project can be found here[https://japanese-dates-quiz.github.io/].
+Live version of the project can be found https://japanese-dates-quiz.github.io/[here].
 
 If you want to run this locally, you can simply clone the repository and run a dev server in the `src` directory.
 
@@ -20,4 +20,4 @@ None
 
 == License
 
-This project is licensed under the MIT License - see the LICENSE[/LICENSE] file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
