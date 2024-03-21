@@ -1292,6 +1292,10 @@
                             },
                             ['GitHub']
                         )
+                    ]),
+                    h('p', 'footer--text', {}, ['•']),
+                    h('p', 'footer--text', {}, [
+                        h('span', '', {}, ['Version ' + (window.COMMIT_HASH || '')])
                     ])
                 ])
             ]),
