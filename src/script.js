@@ -1073,11 +1073,19 @@
             'November',
             'December'
         ];
+        const specialDays = {
+            1: '1st',
+            2: '2nd',
+            3: '3rd',
+            21: '21st',
+            22: '22nd',
+            23: '23rd',
+        }
 
         return h('div', 'calendar', {}, [
             h('div', 'calendar--header', {}, [
                 h('p', 'calendar--month-year', {}, [
-                    months[date.getMonth()] + ' ' + date.getFullYear()
+                    (specialDays[date.getDate()] || (date.getDate() + 'th')) + ' of ' + months[date.getMonth()] + ' ' + date.getFullYear()
                 ])
             ]),
             h('div', 'calendar--body', {}, [
